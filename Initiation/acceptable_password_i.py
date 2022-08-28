@@ -14,7 +14,7 @@
 # END_DESC
 
 def is_acceptable_password(password: str) -> bool:
-    
+    return len(password) > 6
 
 
 if __name__ == '__main__':

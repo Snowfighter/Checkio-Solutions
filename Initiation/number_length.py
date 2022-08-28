@@ -10,7 +10,7 @@
 # END_DESC
 
 def number_length(a: int) -> int:
-    r
+    return len(list(map(int, str(a))))
 
 
 if __name__ == '__main__':

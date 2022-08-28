@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Checkio init files
-*.ini
+checkio.ini

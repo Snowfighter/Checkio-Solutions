@@ -8,3 +8,5 @@ Apparently the quickest way to find the first word in this exercise is not to us
 Why on Earth have I decided to make a list ofintegers out of a number, when I can just calculate the length of `str(number)` ?
 # The Most Frequent
 Should look at the `statistics` module
+# End Zeros
+Found a `.group()` method inregex that returns an entire match 

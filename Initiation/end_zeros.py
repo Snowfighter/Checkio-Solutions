@@ -9,8 +9,9 @@
 # 
 # END_DESC
 
+import re
 def end_zeros(num: int) -> int:
-    
+    return re.match('0*', str(num)[::-1]).span()[1]
 
 
 if __name__ == '__main__':

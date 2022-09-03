@@ -12,6 +12,7 @@
 # END_DESC
 
 def is_all_upper(text: str) -> bool:
+    return text == text.upper()
     
 if __name__ == '__main__':
     print("Example:")

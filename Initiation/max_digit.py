@@ -10,7 +10,7 @@
 # END_DESC
 
 def max_digit(number: int) -> int:
-    
+    return max(list(map(int, str(number))))
 
 if __name__ == '__main__':
     print("Example:")

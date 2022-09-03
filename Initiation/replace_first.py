@@ -11,11 +11,12 @@
 # 
 # END_DESC
 
-from typing import Iterable
+from collections.abc import Iterable
 
 
 def replace_first(items: list) -> Iterable:
-    
+    return items[1:] + items[:1]
+
 
 if __name__ == "__main__":
     print("Example:")

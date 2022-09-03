@@ -14,11 +14,12 @@
 # END_DESC
 
 import re
+
 def between_markers(text: str, begin: str, end: str) -> str:
     """
         returns substring between two given markers
     """
-    
+    return re.search(rf"(?<=\{begin}).*(?=\{end})", text).group()   
 
 if __name__ == '__main__':
     print('Example:')

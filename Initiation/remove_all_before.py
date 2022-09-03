@@ -16,10 +16,13 @@
 # END_DESC
 
 
-
+from collections.abc import Iterable
 
 def remove_all_before(items: list, border: int) -> Iterable:
-    
+    try:
+        return items[items.index(border):]
+    except ValueError:
+        return items
 
 
 if __name__ == '__main__':

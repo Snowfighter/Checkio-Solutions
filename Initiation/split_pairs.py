@@ -13,7 +13,8 @@
 
 import re
 def split_pairs(a):
-    
+    # return re.findall('..', a+'_')
+    return list(map(''.join, zip(*[iter(a+'_')]*2)))
 
 
 if __name__ == '__main__':

@@ -9,4 +9,6 @@ Why on Earth have I decided to make a list ofintegers out of a number, when I ca
 # The Most Frequent
 Should look at the `statistics` module
 # End Zeros
-Found a `.group()` method inregex that returns an entire match 
+Found a `.group()` method inregex that returns an entire match
+# Remove All Before
+Could use lambda function for speed but I like exceptions, more straightforward

@@ -12,8 +12,9 @@
 # END_DESC
 
 import re
+
 def beginning_zeros(number: str) -> int:
-    
+    return len(re.search('^0*', number).group())
 
 
 if __name__ == '__main__':

@@ -12,7 +12,7 @@
 # END_DESC
 
 def is_even(num: int) -> bool:
- 
+    return not bool(num&1)
 
 
 if __name__ == '__main__':

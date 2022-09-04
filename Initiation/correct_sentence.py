@@ -13,12 +13,14 @@
 # 
 # END_DESC
 
+
 def correct_sentence(text: str) -> str:
     """
         returns a corrected sentence which starts with a capital letter
         and ends with a dot.
     """
-   
+    s = text.split('.')[0]
+    return s[0].upper() + s[1:] + '.'
 
 if __name__ == '__main__':
     print("Example:")

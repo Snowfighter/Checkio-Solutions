@@ -18,7 +18,8 @@
 
 
 def nearest_value(values: set, one: int) -> int:
-    
+    offsets = list(map(lambda x: (abs(one-x), x), list(values)))
+    return min(offsets)[1]
 
 
 if __name__ == '__main__':

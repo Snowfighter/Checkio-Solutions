@@ -23,9 +23,11 @@
 # 
 # END_DESC
 
+from collections import Counter
+
 def checkio(data: list) -> list:
-    # your code here
-    return None
+    # return list(filter(lambda i: (c := Counter(data))[i]-1, data))
+    return list(filter(lambda i: data.count(i)-1, data))
 
 print('Example:')
 print(checkio([1, 2, 3, 1, 3]))

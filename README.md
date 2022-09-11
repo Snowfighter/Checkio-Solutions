@@ -33,6 +33,8 @@ I tried to used fancy bitwise operations, because `even_number AND 1 == 0`. Ex: 
 Was stupid to me not to apply `min` function on the set, but rather on the list.
 ## Home
 ### Three Words
-
 I have approached this task in two ways: regex and mapping. Regex helped to filter out three words. In my opinion, my regex approach is a bit cumbersome and can be done easier using `\D+\s` metacharacters. Mapping can be used to transform strings into 1 and 0 pattern, where 1 is a word string and 0 is not.
+### Sum Numbers
+Keep forgetting that int itself is a function and I do not need to specify any varibale for it in `lambda` functions.
+
 

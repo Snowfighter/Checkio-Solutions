@@ -12,8 +12,7 @@
 # END_DESC
 
 def sum_numbers(text: str) -> int:
-    # your code here
-    return 0
+    return sum(list(map(lambda i: int(i) if i.isdigit() else 0, text.split())))
 
 
 if __name__ == "__main__":

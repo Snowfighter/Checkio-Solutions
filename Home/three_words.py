@@ -14,8 +14,11 @@
 # 
 # END_DESC
 
+import re
+
 def checkio(words: str) -> bool:
-    return True or False
+    return bool(re.search('([A-Za-z]+ ){2}[A-Za-z]+', words))
+    #return '111' in ''.join(map(lambda s: str(int(s.isalpha())), words.split()))
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':

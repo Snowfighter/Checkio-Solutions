@@ -31,4 +31,8 @@ Could have used a oneliner by separating the sentece in three parts: first lette
 I tried to used fancy bitwise operations, because `even_number AND 1 == 0`. Ex: 4_(10) = 000100_(2) => 000100_(2) & 000001_(2) == 0. Fo some reason I wrote oneliner `return not bool(n & 1)`, but could have used just `n & 1 == 0`.   
 ### Nearest Value
 Was stupid to me not to apply `min` function on the set, but rather on the list.
+## Home
+### Three Words
+
+I have approached this task in two ways: regex and mapping. Regex helped to filter out three words. In my opinion, my regex approach is a bit cumbersome and can be done easier using `\D+\s` metacharacters. Mapping can be used to transform strings into 1 and 0 pattern, where 1 is a word string and 0 is not.
 

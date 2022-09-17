@@ -1,5 +1,5 @@
 # Checkio-Solutions
-My perosnal notes and solutions for Checkio tasks
+y perosnal notes and solutions for Checkio tasks
 
 ## Initiation
 ### First Word Simplified

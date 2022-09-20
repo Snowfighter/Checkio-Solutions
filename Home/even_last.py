@@ -17,8 +17,7 @@
 # END_DESC
 
 def checkio(array: list[int]) -> int:
-    # your code here
-    return None
+    return sum(array[::2])*array[-1] if len(array) else 0
 
 
 print("Example:")

@@ -15,10 +15,9 @@
 
 from typing import List, Any
 
-
 def all_the_same(elements: List[Any]) -> bool:
     # your code here
-    return True
+    return all(map(lambda i: i == elements[0], elements))
 
 
 print("Example:")

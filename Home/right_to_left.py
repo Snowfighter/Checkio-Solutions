@@ -21,11 +21,14 @@
 # 
 # END_DESC
 
+import re
+
 def left_join(phrases: tuple) -> str:
     """
     Join strings and replace "right" to "left"
     """
-    return "left"
+    
+    return re.sub(r'(right)', 'left', ','.join(phrases))
 
 
 print("Example:")

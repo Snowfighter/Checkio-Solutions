@@ -15,12 +15,14 @@
 # 
 # END_DESC
 
+import re
+
 def first_word(text: str) -> str:
     """
     function returns the first word in a given text.
     """
     # your code here
-    return text[0:2]
+    return re.findall(r"(?:[.]*[\s]*[\d]*)([A-Za-z]+[']*[A-Za-z]*)(?:[.]*[\s]*[\d]*)", text)[0]
 
 
 print("Example:")

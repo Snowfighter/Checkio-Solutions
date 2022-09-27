@@ -44,5 +44,6 @@ Should have remebered that `set` removes duplicates and works with the empty lis
 l = []
 iter = map(lambda i: i == l[0], l)
 ```
+Update: [Answer on StackOverflow](https://stackoverflow.com/questions/73865531/how-does-map-function-handle-errors?noredirect=1#comment130428109_73865531)
 
 

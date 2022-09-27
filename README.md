@@ -36,5 +36,13 @@ Was stupid to me not to apply `min` function on the set, but rather on the list.
 I have approached this task in two ways: regex and mapping. Regex helped to filter out three words. In my opinion, my regex approach is a bit cumbersome and can be done easier using `\D+\s` metacharacters. Mapping can be used to transform strings into 1 and 0 pattern, where 1 is a word string and 0 is not.
 ### Sum Numbers
 Keep forgetting that int itself is a function and I do not need to specify any varibale for it in the `lambda` functions.
+### Right To Left
+Someone once wrote that if you get into regex, you'll always try to use it. This happened to me today. `String` has a `replace` method, how could I forget it ? Instead I have use the regex again.
+### All The Same
+Should have remebered that `set` removes duplicates and works with the empty lists. Also checking equlity of the original list and the reversed one is a really nice solution. The question that bugs my mind is why `map` works when we address to the empty list by index:
+```
+l = []
+iter = map(lambda i: i == l[0], l)
+```
 
 

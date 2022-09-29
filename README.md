@@ -40,6 +40,8 @@ Keep forgetting that int itself is a function and I do not need to specify any v
 Someone once wrote that if you get into regex, you'll always try to use it. This happened to me today. `String` has a `replace` method, how could I forget it ? Instead I have use the regex again.
 ### First Word
 For som reason I have not read the task correctly and made a humongous regex for extracting words even if we have numbers in the string. Apparently, no numbers were in the test cases. Another thing that I've learned is this elegant approach: `[x, ' '][x in '.,']`, where the first pair of square brackets is a list and the second will result either in `[True]` or `[False]`, and boolean being a subclass of int will transform into the following `[1]` or `[0]`.
+### Checnging Direction
+Could find an elegany solution. My concept was in finding the diferences between the neighboring numbers and stripping zeroes from bothe sides as that means equal trailing numbers.
 ### All The Same
 Should have remebered that `set` removes duplicates and works with the empty lists. Also checking equlity of the original list and the reversed one is a really nice solution. The question that bugs my mind is why `map` works when we address to the empty list by index:
 ```

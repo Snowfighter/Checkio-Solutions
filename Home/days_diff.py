@@ -13,9 +13,11 @@
 # 
 # END_DESC
 
+from datetime import date
+
 def days_diff(a, b):
     # your code here
-    return None
+    return abs((date(*a) - date(*b)).days)
 
 
 if __name__ == "__main__":

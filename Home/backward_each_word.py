@@ -11,9 +11,10 @@
 # 
 # END_DESC
 
+import re
 def backward_string_by_word(text: str) -> str:
     # your code here
-    return None
+    return ''.join(map(lambda s: s[::-1], re.split(r'(\s+)', text)))
 
 
 print("Example:")

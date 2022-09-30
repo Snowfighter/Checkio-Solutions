@@ -11,7 +11,8 @@
 
 def count_digits(text: str) -> int:
     # your code here
-    return 0
+    # return len(re.findall(r'(\d)', text))
+    return len(list(filter(lambda c: c.isdigit(), text)))
 
 
 print("Example:")

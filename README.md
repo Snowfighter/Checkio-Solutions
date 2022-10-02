@@ -44,6 +44,12 @@ For som reason I have not read the task correctly and made a humongous regex for
 Could find an elegany solution. My concept was in finding the diferences between the neighboring numbers and stripping zeroes from bothe sides as that means equal trailing numbers.
 
 Update: I really liked the use of `pairwise` function from **itertools**, which returns successive overlapping pairs. Also the use of '+' and '-' to indicate the growth and the recession of the sequence is a nice move.
+### Count Digits
+In one of solutions a list of bools is created, but I would like to test if using **regex** will still be faster.
+### Backward Each Word
+`map` function appears to be faster than list comprehension.
+### Bigger Price
+Could have use `-` for revese sorting instead of `reverse=True`
 ### All The Same
 Should have remebered that `set` removes duplicates and works with the empty lists. Also checking equlity of the original list and the reversed one is a really nice solution. The question that bugs my mind is why `map` works when we address to the empty list by index:
 ```

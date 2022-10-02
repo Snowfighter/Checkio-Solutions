@@ -16,7 +16,7 @@ def bigger_price(limit: int, data: list[dict]) -> list[dict]:
     TOP most expensive goods
     """
     # your code here
-    return []
+    return sorted(data, key=lambda d: d['price'], reverse=True)[:limit]
 
 
 print("Example:")

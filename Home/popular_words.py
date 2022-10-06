@@ -16,9 +16,15 @@
 # 
 # END_DESC
 
+from collections import Counter
 def popular_words(text: str, words: list) -> dict:
-    # your code here
-    return None
+    c = Counter(text.lower().split())
+    d = dict(c.most_common())
+    for i in set(d.keys()) - set(words):
+        d.pop(i)
+    for j in set(words) - set(d.keys()):
+        d[j] = 0
+    return d
 
 
 if __name__ == '__main__':

@@ -11,9 +11,10 @@
 # 
 # END_DESC
 
+import math
 def split_list(items: list) -> list:
     # your code here
-    return [items]
+    return [items[:math.ceil(len(items)/2)], items[math.ceil(len(items)/2):]]
 
 
 if __name__ == '__main__':

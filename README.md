@@ -58,4 +58,6 @@ iter = map(lambda i: i == l[0], l)
 ```
 Update: [Answer on StackOverflow](https://stackoverflow.com/questions/73865531/how-does-map-function-handle-errors?noredirect=1#comment130428109_73865531)
 
+#### TEST ####
+
 

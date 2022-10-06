@@ -56,10 +56,11 @@ MORSE = {
     "----.": "9",
 }
 
+import re
 
 def morse_decoder(code: str) -> str:
     # replace this for solution
-    return code
+    return ' '.join(map(lambda j: ''.join(map(lambda i: MORSE[i], j.split())), re.split(r'\s\s', code))).capitalize()
 
 
 print("Example:")
